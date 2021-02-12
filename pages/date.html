@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Flaming Soul</title>
+    <meta name="Description" content="Troupe de spectacle de rue basée sur Mulhouse dans la région Alsace. Notre spécialité, le jonglage et la danse accompagnée par le feu. Notre but est de vous divertir pendant les longues nuits d'été.">
+    
+    <link rel="preload" href="../style.css" as="style">
+    <link rel="stylesheet" href="../style/style.css">
+
+    <link rel="stylesheet" media="screen and (min-width:1200px)" href="../style/desktop_style.css"> 
+
+    <link rel="icon" href="../img/favicon.png" />
+</head>
+<style>
+    @import "url ('https://fonts.googleapis.com/css2? family = Raleway & display = swap')";
+    
+    body{
+        background: rgb(0, 0, 0);
+        margin: 0px;
+        font-family: "Raleway";
+        }
+    
+    a{
+        text-decoration: none;
+        color: white;
+        margin: 0px;
+    }
+
+    h2{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    
+    /* ************************************************************ */
+    /* HEADER */
+    /* ************************************************************ */
+    header{
+        /* position */
+        position:fixed; 
+        top: 0;
+        left: 0;
+        width: 100vw;
+        padding-top: 10px;
+    
+        /* flex */
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+        /* background */
+        background-color: #2C2C2C;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.551);
+    }
+    header>a>img:not(.logo){
+        /* Border */
+        border-radius: 50%;
+        padding: 3px; 
+    margin: 10px 10px 0px 10px;
+        max-width: 47%;
+    }
+    
+    header>a>img:hover{
+        background: linear-gradient(rgb(166, 0, 255), red);
+        transform: scale(1.1);
+        transition: 0.4s;
+    }
+    .logo:hover{
+        background: transparent;
+    }
+    
+    h1{
+        font-size: 13px;
+        font-weight: normal;
+        margin-bottom: 10px; 
+    }
+    
+    .logo{
+        margin: 5px;
+    }
+    
+    .burger{
+        height: 20px;
+        margin: 30px;
+    }
+
+    .hilight{ 
+        background: linear-gradient(cyan, blue);
+    }
+
+    /* ************************************************************ */
+    /* MAIN */
+    /* ************************************************************ */
+    /* Style_Page.css */
+    .mainindex{
+        height: 100vh;
+        background: rgba(255, 1, 1, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contener{
+        margin: 10%;
+        padding-top: 10%;
+        text-align: center;
+    }
+    .contener>img{
+        max-width: 50%;
+    }
+    .contener>p{
+        color: white;
+    }
+    </style>
+<body>
+    <!-- header -->
+    <header>
+        <a href="../pages/présentation.html">
+            <img loading="lazy" src="../img/Présentation_FlamingSoul.jpg" alt="présentation de la troupe" class="autre">
+            <h1>QUI SOMMES<br>NOUS ?</h1>
+        </a>
+        <a href="../pages/equipe.html">
+            <img loading="lazy" src="../img/membres_FlamingSoul.jpg" alt="les membres de la troupe" class="autre">
+            <h1>NOTRE<br>EQUIPE</h1>
+        </a>
+        
+        <img loading="lazy"src="../img/menu.png" alt=""  onclick="menu()" class="burger">
+        <a href="../index.html" class="not">
+            <img loading="lazy"src="../img/FlamingLogo.png" alt="logo flaming soul" class=" logo" height="110">
+        </a>
+        <img loading="lazy"src="../img/meunT.png" alt=""  onclick="menu()" class="burger none">
+
+        <a href="../pages/date.html">
+            <img loading="lazy"src="../img/date_spéctacle_FlamingSoul.jpg" alt="dates des péctacles de flaming soul" class="hilight">
+            <h1>NOS<br>DATES </h1>
+        </a>
+                <a href="../pages/contact.html">
+            <img loading="lazy"src="../img/Contact_FlamingSoul.jpg" alt="contacter la troupe" class="autre">
+            <h1>NOUS<br>CONTACTER</h1>
+        </a>
+    </header>
+    
+    <nav>
+        <!-- TOP -->
+        <div onclick="menu()">
+            <img loading="lazy" src="../img/FlamingLogo.png" alt="logo flaming soul" height="100px">
+            <img loading="lazy" src="../img/menu.png" alt="logo flaming soul"  onclick="menu()" class="burger">
+        </div>
+
+        <div class="separation"></div>
+
+        <!-- Links -->
+        <a href="../index.html">
+            <img loading="lazy" src="../img/accueil_FlamingSoul.jpg" alt="Accueil ">
+            <h1>Accueil</h1>
+        </a><div class="separationL"></div>
+        <a href="../pages/présentation.html">
+            <img loading="lazy" src="../img/Présentation_FlamingSoul.jpg"  alt="les membres de la troupe">
+            <h1>Qui Somme Nous ?</h1>
+        </a><div class="separationL"></div>
+        <a href="../pages/equipe.html">
+            <img loading="lazy" src="../img/membres_FlamingSoul.jpg" alt="dates des péctacles de flaming soul" >
+            <h1>Notre Equipe</h1>
+        </a><div class="separationL"></div>
+        <a href="../pages/contact.html">
+            <img loading="lazy" src="../img/Contact_FlamingSoul.jpg" alt="contacter la troupe" >
+            <h1>Nous Contacter</h1>
+        </a>       
+    </nav>
+    <!-- main -->
+    <div class="spe">
+        <div class="txt">
+            <img src="../img/flamme_ardente.jpg" alt="flamme_ardente" max-width="90%"> 
+            <div>
+                <h2 class="txtspe">La flamme ardente
+                </h2>
+                <p class="txtspe">
+                    Le spectacle se déroule en 850, en Norvège chez les Vikings. Le personnage principal Olaf avec ses amis ont toujours eu le loisir de s’amuser avec le feu. Tous les jours, ils se retrouvaient pour jouer ensemble à manipuler du feu. Puis au fur et à mesure ils commençaient à exceller dans le domaine. Olaf étant fou amoureux d’Astrid, la fille du jarl (prononcer « yarl » est l'équivalent de comte). Olaf demande alors à ses amis s’ils peuvent l’aider à impressionner Astrid et tout le village avec leur “magie” de feu. Le jarl donnait l’accord aux jeunes amis de faire un spectacle le tout accompagné d’un festin. Olaf met en place ce spectacle avec pour seul objectif d'impressionner Astrid et de lui demander sa main une fois la représentation finie.</p>
+                <div class="postit">
+                    <h3>Lundi 19 Juillet 2021</h3>
+                    <h3>20h</h3>
+                    <h3>Mulhouse</h3>
+                </div>
+            </div>
+        </div>
+
+        <hr class="datehr">
+
+        <div class="txt">
+            <img src="../img/brasier.jpg" alt="brasier"> 
+            <div>
+                <h2 class="txtspe">Brasier</h2>
+                <p class="txtspe">Représentation de notre 1er spéctcale.<br>Le spectacle se déroule en 850, en Norvège chez les Vikings. Le personnage principal Olaf avec ses amis ont toujours eu le loisir de s’amuser avec le feu. Tous les jours, ils se retrouvaient pour jouer ensemble à manipuler du feu. Puis au fur et à mesure ils commençaient à exceller dans le domaine. Olaf étant fou amoureux d’Astrid, la fille du jarl (prononcer « yarl » est l'équivalent de comte). Olaf demande alors à ses amis s’ils peuvent l’aider à impressionner Astrid et tout le village avec leur “magie” de feu. Le jarl donnait l’accord aux jeunes amis de faire un spectacle le tout accompagné d’un festin. Olaf met en place ce spectacle avec pour seul objectif d'impressionner Astrid et de lui demander sa main une fois la représentation finie.</p>
+                <div class="postit">
+                    <h3>Lundi 27 Juillet 2021</h3>
+                    <h3>23h</h3>
+                    <h3>Mulhouse</h3>
+                </div>
+            </div>
+        </div>
+
+        <hr class="datehr">
+
+        <!-- <div class="txt">
+            <img src="../img/spé3.jpg" alt=""> 
+            <div>
+                <h2 class="txtspe">Titre du spécatcle</h2>
+                <p class="txtspe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt tortor id elit egestas, at elementum nisi sodales. Etiam elementum, ante vel dapibus blandit, enim eros feugiat arcu, et blandit dolor urna a est. Nulla ullamcorper, risus a rhoncus feugiat, ante diam aliquam augue, sodales elementum leo sem nec enim. Praesent suscipit lectus rutrum turpis porta, a fringilla elit sagittis. Curabitur aliquam non quam vitae pretium. Quisque quis urna in 
+
+                dolor ullamcorper condimentum sagittis laoreet diam. Mauris faucibus justo nunc, id placerat dui vulputate eu. Praesentrisus a rhoncus feugiat, ante diam aliquam augue, sodales elementum leo sem nec enim. Praesent suscipit lectus rutrum turpis porta, a fringilla elit sagittis. Curabitur aliquam non quam vitae pretium. Quisque quis urna in 
+                    
+                dolor ullamcorper condimentum sagittis laoreet diam. Mauris faucibus justo nunc, id placerat dui vulputate eu. Praesent eget tristique m</p>
+                <div class="postit">
+                    <h3>Lundi 27 Janvier</h3>
+                    <h3>23h</h3>
+                    <h3>Mulhouse</h3>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="foot">
+            <a href="../pages/mention.html">Mentions Légales</a>
+            <a href="../pages/CGV.html">CGV</a>
+            <a href="../pages/contact.html">Nous Contacter</a>
+        </div>
+        <p class="blanc"> ©Copyright - Yuzuu Communication 2021</p>
+    </footer>
+
+
+    <script async src="../js/script.js">
+    </script>
+    
+</body>
+</html>

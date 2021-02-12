@@ -1,0 +1,120 @@
+/* ************************************************************ */
+/* HEADER */
+/* ************************************************************ */
+header{
+    justify-content: center;
+}
+header>a:not(.not){
+    display: initial;
+}
+.burger{
+   display: none;
+}
+
+.hilight{ 
+    background: linear-gradient(cyan, blue);
+}
+
+nav{
+    display: none;
+}
+.mainindex{
+    justify-content: left;
+    background-position-x: 50%;
+}
+.contener{
+    margin: 10%;
+    text-align: left;
+}
+.fs{
+    padding-top: 20%;
+}
+.contener>p{
+    color: white;
+    font-size: 1em;
+}
+
+/* ************************************************************ */
+/* Qui sommes nous ? */
+/* ************************************************************ */
+.txt{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: left;
+    align-items: center;
+}
+.txt>img{
+    max-width: 100%;
+    padding: 90px;
+    margin: auto;
+}
+.txt>div{
+   margin: 30px;
+}
+.affiche{
+    margin: 50px;
+}
+.gridenfant{
+    margin: 50px;
+    grid-auto-rows: auto;
+    grid-template-columns: auto auto auto;
+}
+.vignette{
+    margin: 3px ;
+}
+
+/* ************************************************************ */
+
+/* ************************************************************ */
+/* EQUIPE */
+/* ************************************************************ */
+.equipe>div{
+    margin: 0px 20px 0px 20px; 
+    text-align: left;
+    grid-template-columns: auto auto;
+}
+
+.equipe>div:nth-child(2n){
+    text-align: right;
+}
+.equipe>div>img{
+    max-width: 100%;
+}
+.equipe>div>div>img{
+    max-width: 50%;
+}
+
+.desktop{
+    display: initial;
+}
+.mobil{
+    display: none;
+}
+/* ************************************************************ */
+
+/* ************************************************************ */
+/* SPECTACLES */
+/* ************************************************************ */
+.postit{
+    background-color: rgb(255, 183, 88);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.285);
+}
+/* ************************************************************ */
+
+
+/* ************************************************************ */
+/* SPECTACLES */
+/* ************************************************************ */
+.contact>div{
+    text-align: left;
+    background: rgba(0, 0, 0, 0.762);
+    width: 40vw;
+    margin: 30px;
+}
+.contact{
+    background-position-x: 20%;
+    background-position-y: 20%;
+}
+/* ************************************************************ */
